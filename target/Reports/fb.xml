@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="4" time="59.808971">
+    <testcase classname="To validate the Login Funtionality in FB application" name="To validate Login Functionality by passing invalid values" time="15.894324">
+        <failure message="java.lang.NullPointerException&#13;&#10;&#9;at org.step.StepDefinition.to_pass_the_invalid_username_in_email_field(StepDefinition.java:31)&#13;&#10;&#9;at ✽.To pass the invalid username in email field(file:src/test/resources/loginfunction.feature:8)&#13;&#10;">
+            <![CDATA[Given To open a browser and maximize........................................passed
+When To launch the FB application...........................................passed
+And To pass the invalid username in email field.............................failed
+And To pass the invalid password in password field..........................skipped
+And To click a  login button................................................skipped
+And To check whether it should navigate to the error page or home page......skipped
+Then To close a browser.....................................................skipped
+
+StackTrace:
+java.lang.NullPointerException
+	at org.step.StepDefinition.to_pass_the_invalid_username_in_email_field(StepDefinition.java:31)
+	at ✽.To pass the invalid username in email field(file:src/test/resources/loginfunction.feature:8)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="To validate the Login Funtionality in FB application" name="To validate positive and negative combination Testcases" time="10.141946">
+        <system-out>
+            <![CDATA[Given To launch the browser and max window..................................passed
+When To launch url of the application.......................................passed
+When To pass positive and negative "java" data to email field...............passed
+When To pass positive and "Java123" negative data to password field.........passed
+And To click login button...................................................passed
+Then Close the browser......................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="To validate the Login Funtionality in FB application" name="To validate positive and negative combination Testcases 2" time="13.058759">
+        <system-out>
+            <![CDATA[Given To launch the browser and max window..................................passed
+When To launch url of the application.......................................passed
+When To pass positive and negative "Cucumber" data to email field...........passed
+When To pass positive and "cucumber123" negative data to password field.....passed
+And To click login button...................................................passed
+Then Close the browser......................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="To validate the Login Funtionality in FB application" name="To validate positive and negative combination Testcases 3" time="20.713942">
+        <system-out>
+            <![CDATA[Given To launch the browser and max window..................................passed
+When To launch url of the application.......................................passed
+When To pass positive and negative "Selenium" data to email field...........passed
+When To pass positive and "selenium123" negative data to password field.....passed
+And To click login button...................................................passed
+Then Close the browser......................................................passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>
